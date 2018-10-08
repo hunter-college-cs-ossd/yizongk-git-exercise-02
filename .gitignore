@@ -1,0 +1,9 @@
+# Miscellaneous files to exclude 
+
+# Compiled Object files
+*.o
+
+# Executables
+*.out
+bin/*
+!bin/.gitkeep
