@@ -49,7 +49,7 @@ typedef ostream& (*output_function) (const ostream & out);
 
 
 
-int main(int argc, char* argv )
+int main(int argc, char* argv[] )
 {
 
     // Calls to output functions

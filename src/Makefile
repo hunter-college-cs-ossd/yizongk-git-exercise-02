@@ -7,36 +7,22 @@
 #	make install
 # 	make clean
 
-# Written by Stewart Weiss, September 23, 2018
+# Written by Stewart Weiss, October 8, 2018
 
 
-CC         = /usr/bin/gcc
 CXX        = /usr/bin/g++
-
-C_SRCS    := $(wildcard *.c )
-CXX_SRCS  := $(wildcard *.cpp )
-
-C_EXECS   := $(patsubst %.c, %, $(C_SRCS))
-CXX_EXECS := $(patsubst %.cpp, %, $(CXX_SRCS))
-
-EXECS      = $(CXX_EXECS) $(C_EXECS)
-
 CXXFLAGS  += -Wall -g 
-CFLAGS    += -Wall -g 
 
 .PHONY: all clean install
 
-all:   $(EXECS)
+all:   oddities
 
 clean:
-	$(RM)  *.o $(EXECS)
+	$(RM)  *.o oddities
 
-install: $(EXECS)
-	cp $(EXECS) ../bin
+install: oddities
+	cp oddities ../bin
 
-.cpp:
-	$(CXX) $(CXXFLAGS) $@.cpp  -o $@
-
-.c:
-	$(CC) $(CFLAGS) $@.c  -o $@
+oddities:   main.cpp
+	$(CXX) $(CXXFLAGS) main.cpp  -o oddities
 
