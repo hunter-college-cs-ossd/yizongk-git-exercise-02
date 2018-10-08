@@ -14,27 +14,22 @@ four (or five) people. In this description, this group is called "the team".
 
 ## The Assignment
 This `README.md` file is part of a GitHub repository to which you have
-read access but neither write nor administrative access.
-Your instructor is the project maintainer and has full access to the project.
-
-
+read and write access but not administrative access.
 
 
 ## Detailed Steps
-
-1. On the server (e.g. GitHub) `fork` this canonical repository to your
-public repository. Name your fork `git-exercise-02`.
 
 2. Make a note of who is on your team. The list of teams and their members 
 is in a CSV file in this directory, `teams.csv` as well as in the assignment
 specification on the course website. Teams are rows in this file.
 
 3. Fork a copy of the repository of each team member to your publc repository.
-Name each fork using the form `username-git-exercise-02` where `username` is their
+These respositories are in `https://github.com/hunter-college-cs-ossd`
+and have names like `username-git-exercise-02` where `username` is their
 GitHub username.
 
-4. Now `clone` all repositories to your local machine as you did in the 
-first exercise.
+4. Now `clone` the forked repositories to your local machine as you did in the 
+first exercise. Also clone your own repository to your local machine.
 
 5.  For each repository that you cloned, add an `upstream` remote to 
 this repository using the `git remote add ...` 
