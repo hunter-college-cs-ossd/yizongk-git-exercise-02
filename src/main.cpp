@@ -1,20 +1,12 @@
 /******************************************************************************
   Title          : main.cpp
-<<<<<<< HEAD
   Author         : Yi Zong Kuang
-=======
-  Author         : LiudmilaZyrianova239
->>>>>>> b66380d8ef4230cf6e6888ccb45e6deb4f079cbe
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
   Usage          : nuttyfact
   Build with     : g++ -Wall -g -o oddities  main.cpp
-<<<<<<< HEAD
-  Modifications  : 
-=======
   Modifications  : Added LiudmilaZyrianova239_oddity to main.cpp
->>>>>>> b66380d8ef4230cf6e6888ccb45e6deb4f079cbe
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
