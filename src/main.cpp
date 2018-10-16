@@ -1,12 +1,20 @@
 /******************************************************************************
   Title          : main.cpp
+<<<<<<< HEAD
   Author         : Yi Zong Kuang
+=======
+  Author         : LiudmilaZyrianova239
+>>>>>>> b66380d8ef4230cf6e6888ccb45e6deb4f079cbe
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
   Usage          : nuttyfact
   Build with     : g++ -Wall -g -o oddities  main.cpp
+<<<<<<< HEAD
   Modifications  : 
+=======
+  Modifications  : Added LiudmilaZyrianova239_oddity to main.cpp
+>>>>>>> b66380d8ef4230cf6e6888ccb45e6deb4f079cbe
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
@@ -38,11 +46,10 @@ using namespace std;
 typedef ostream& (*output_function) (ostream & out);
 
 
-/******************************************************************************
-        
-                        All Function Definitions
-
-******************************************************************************/
+ostream& LiudmilaZyrianova239_oddity(ostream & out){
+    out << "If you tied buttered toast to the back of a cat and dropped it from a height, what would happen?\n";
+    return out;
+}
 
 ostream& yizongk_oddity(ostream& out) {
     out << "This is a collection of strange but true facts. ;)\n";
@@ -58,7 +65,8 @@ int main(int argc, char* argv[] )
     // Calls to output functions
     output_function a = yizongk_oddity;
     a(cout);
-
+    a = LiudmilaZyrianova239_oddity;
+    a(cout);
 
 
     return 0;
