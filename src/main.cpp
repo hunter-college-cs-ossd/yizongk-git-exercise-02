@@ -55,7 +55,11 @@ ostream& Jimmyzs_oddity(ostream & out)
     return out;
 }
 
-
+ostream& audiencia_cereal_oddity(ostream& out)
+{
+    out << "Do you need a silencer if you are going to shoot a mime?\n";
+    return out;
+}
 
 
 int main(int argc, char* argv[] )
@@ -69,6 +73,9 @@ int main(int argc, char* argv[] )
     output_function Jimmyzs;
     Jimmyzs = Jimmyzs_oddity;
     Jimmyzs(cout);
+
+    output_function audiencia_cereal = audiencia_cereal_oddity;
+    audiencia_cereal(cout);
 
 
     return 0;
