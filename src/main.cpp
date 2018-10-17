@@ -7,6 +7,7 @@
   Usage          : nuttyfact
   Build with     : g++ -Wall -g -o oddities  main.cpp
   Modifications  : Added LiudmilaZyrianova239_oddity to main.cpp
+                   Added Jimmyzs_oddity to main.cpp
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
@@ -48,6 +49,12 @@ ostream& yizongk_oddity(ostream& out) {
     return out;
 }
 
+ostream& Jimmyzs_oddity(ostream & out)
+{
+    out<<"How does the guy who drives the snowplow get to work in the mornings?\n";
+    return out;
+}
+
 
 
 
@@ -59,6 +66,9 @@ int main(int argc, char* argv[] )
     a(cout);
     a = LiudmilaZyrianova239_oddity;
     a(cout);
+    output_function Jimmyzs;
+    Jimmyzs = Jimmyzs_oddity;
+    Jimmyzs(cout);
 
 
     return 0;
