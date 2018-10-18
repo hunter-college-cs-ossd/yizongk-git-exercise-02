@@ -8,6 +8,7 @@
   Build with     : g++ -Wall -g -o oddities  main.cpp
   Modifications  : Added LiudmilaZyrianova239_oddity to main.cpp
                    Added Jimmyzs_oddity to main.cpp
+                   Added DanieSegarra36_oddity to main.cpp
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
@@ -61,6 +62,10 @@ ostream& audiencia_cereal_oddity(ostream& out)
     return out;
 }
 
+ostream& DanieSegarra36_oddity(ostream & out){
+    out << "You know that little indestructible black box that is used on planes, why can't they make the whole plane out of the same substance?\n";
+    return out;
+}
 
 int main(int argc, char* argv[] )
 {
@@ -77,6 +82,8 @@ int main(int argc, char* argv[] )
     output_function audiencia_cereal = audiencia_cereal_oddity;
     audiencia_cereal(cout);
 
+    output_function DanieSegarra36 = &DanieSegarra36_oddity;
+    DanieSegarra36(cout); 
 
     return 0;
 }
